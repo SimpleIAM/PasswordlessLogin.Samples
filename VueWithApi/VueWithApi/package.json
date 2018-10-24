@@ -1,0 +1,43 @@
+{
+  "name": "vuewithapi",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "Ryan Foster",
+  "license": "None",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --content-base wwwroot --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "aspnet-webpack": "^3.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.17",
+    "vue-cookie": "^1.1.4",
+    "vue-loader": "^15.4.2",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1",
+    "webpack": "^4.22.0",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "zxcvbn": "^4.4.2"
+  }
+}
