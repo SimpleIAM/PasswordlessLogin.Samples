@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +35,12 @@ namespace VueWithApi
             // you can register custom services for sending mail, hashing password, etc. here
 
             services.AddPasswordlessLogin(Configuration, _env);
+
+            services.AddAuthorization(options =>
+            {
+                options.AddCustomAuthorizationPolicies<Permission>();
+            });
+            services.AddSingleton<IAuthorizationHandler, EnumPermissionHandler>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
