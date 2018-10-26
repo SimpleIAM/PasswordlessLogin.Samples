@@ -28,9 +28,9 @@ Download and run [MailHog](https://github.com/mailhog/MailHog/releases/v1.0.0) o
 
 ### Debugging ###
 
-The authentication system requires certain security cookies that must be set over a secure connection. If running locally under IIS Express and ssl is not enabled, you won't be able to sign in. So either set up SSL in IIS express, or follow the instructuions below to use Kestrel.
+The authentication system requires certain security cookies that must be set over a secure connection. If running locally under IIS Express and ssl is not enabled, you won't be able to sign in. So either set up SSL in IIS express, or follow the instructions below to use Kestrel.
 
-To use the Kestrel server with SSL, edit launchSettings.json (nested under Properties in the Solution Explorer). Add a Ketrel entry to the profiles section:
+To use the Kestrel server with SSL, edit launchSettings.json (nested under Properties in the Solution Explorer). Add a Kestrel entry to the profiles section:
 
 ```
 {
