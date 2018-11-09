@@ -69,4 +69,4 @@ If things aren't working, make sure you have these installed:
 
 * Make sure the "DefaultConnection" connection string is set
 * If targeting an environment other than Production, add an app setting for ASPNETCORE_ENVIRONMENT and set it to "Test" or whichever environment is appropriate.
-* Make sure SMTP settings are configured in appsettings.Production.json or in Azure app settings. In Azure keys will be _Mail.From_, _Mail.Smtp.Password_, and so forth.
+* Make sure SMTP settings are configured in appsettings.Production.json or in Azure app settings. In Azure keys will be _Mail:From_, _Mail:Smtp:Password_, and so forth.
